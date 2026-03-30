@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>MinWeather</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+
+        
+
+        <div class = "top-bar">
+
+            <h1 id = "header">MinWeather</h1>
+
+            <form onsubmit = "showWeather()">
+                <input type = "text" class = "searchBar" id="searchBar" placeholder = "Enter city">
+
+            </form>
+
+            <button onclick = "showWeather()" aria-label = "search weather">🔎</button>
+
+        </div>
+
+        
+
+        <div id = "weatherResult" class = "weatherResult"></div>
+
+        <script src = "script.js"></script>
+    </body>
+</html>

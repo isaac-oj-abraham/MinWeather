@@ -2,9 +2,8 @@ async function getWeather() {
     event.preventDefault();
 
     const city = document.getElementById("searchBar").value;
-    
-    const apikey = "REMOVED";
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=imperial`;
+
+    const url = `/api/weather?city=${city}`;
 
     try {
         const response = await fetch(url);

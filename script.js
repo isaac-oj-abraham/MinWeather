@@ -1,5 +1,5 @@
-async function getWeather() {
-    event.preventDefault();
+async function getWeather(e) {
+    e.preventDefault();
 
     const city = document.getElementById("searchBar").value;
 
@@ -42,6 +42,9 @@ function setTheme(sky) {
     }
     else if (sky == "Clouds") {
         root.setAttribute("data-theme", "cloudy");
+    }
+    else if (sky == "Rain") {
+        root.setAttribute("data-theme", "rainy");
     }
 }
 

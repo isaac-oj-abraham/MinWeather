@@ -30,6 +30,14 @@
     --head: rgb(59, 59, 59);
 }
 
+[data-theme = "rainy"] {
+    --bg: rgb(59, 59, 59);
+    --topBar: rgb(175, 175, 175);
+    --searchBar: lightblue;
+    --textColor: rgb(175, 175, 175);
+    --head: lightblue;
+}
+
 [data-theme = "goldenHour"] {
     --bg: linear-gradient(to top, rgb(255, 252, 190), gold, #f5a623);
     --topBar: rgb(59, 59, 59, 0.5);

@@ -1,5 +1,4 @@
-async function getWeather(e) {
-    e.preventDefault();
+async function getWeather() {
 
     const city = document.getElementById("searchBar").value;
 
@@ -48,7 +47,10 @@ function setTheme(sky) {
     }
 }
 
-async function showWeather() {
+async function showWeather(e) {
+
+    e.preventDefault();
+    
     const data = await getWeather();
     if (!data) {
         document.getElementById("weatherResult").innerText = `failed to get weather`;

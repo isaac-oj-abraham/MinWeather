@@ -45,6 +45,9 @@ function setTheme(sky) {
     else if (sky == "Rain") {
         root.setAttribute("data-theme", "rainy");
     }
+    else if (sky == "Drizzle") {
+        root.setAttribute("data-theme", "rainy");
+    }
 }
 
 async function showWeather(e) {
